@@ -24,6 +24,7 @@ const App = () => {
     <div>
       <h1>Greetings</h1>
       <Hello name={nimi} vuosiluku={vuosiluku} />
+      <Hello name={'ELY'} vuosiluku={2006} />
     </div>
   )
 }
