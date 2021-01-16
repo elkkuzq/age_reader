@@ -2,21 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 const Hello = (props) => {
-  const BornYear = () => {
-    const yearNow = new Date().getFullYear()
-    return yearNow - props.vuosiluku
-  }
-
-
+   const name = props.name
+   const vuosiluku = props.vuosiluku
+  const BornYear = () => new Date().getFullYear() - vuosiluku
   return (
     <div>
       <p>
-        Hello {props.name}, you born {props.vuosiluku}.
+        Hello {name}, you born {vuosiluku}.
       </p>
       <p>so you are {BornYear()} years old.</p>
     </div>
   )
 }
+
 
 const App = () => {
   const nimi = 'javascript'
