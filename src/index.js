@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const Hello = (props) => {
-   const name = props.name
-   const vuosiluku = props.vuosiluku
+const Hello = ({name, vuosiluku}) => {
   const BornYear = () => new Date().getFullYear() - vuosiluku
   return (
     <div>
