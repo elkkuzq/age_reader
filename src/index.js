@@ -15,13 +15,14 @@ const Hello = ({name, vuosiluku}) => {
 
 
 const App = () => {
-  const nimi = 'javascript'
-  const vuosiluku = 1995
+  const javascript = {
+  nimi: 'javascript', vuosiluku: 1995
+  }
 
   return (
     <div>
       <h1>Greetings</h1>
-      <Hello name={nimi} vuosiluku={vuosiluku} />
+      <Hello name={javascript.nimi} vuosiluku={javascript.vuosiluku} />
     </div>
   )
 }
